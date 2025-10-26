@@ -10,7 +10,7 @@ import New from "../components/New/New.jsx";
 import BestBrands from "../components/BestBrands/BestBrands.jsx";
 import Article from "../components/Article/Article.jsx";
 import Footer from "../components/Footer/Footer.jsx";
-import MostSale from "../components/mostSale/mostSale.jsx";
+import MostSale from "../components/MostSale/MostSale.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
