@@ -49,8 +49,7 @@ const Sale = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col md:flex-row md:gap-10 xl:gap-6 ">
-                {/* Column 3 */}
+              <div className="flex flex-col xl:flex-row md:gap-10 xl:gap-6 ">
                 <div className="flex flex-col justify-between w-full lg:w-auto space-y-6">
                   <a className="lg:hidden" href="/product/Powerology-SM011">
                     <div className="rounded-xl shadow flex flex-row items-center bg-white border-l border-b border-gray-200 hover:shadow-lg hover:z-50 gap-2">
@@ -240,9 +239,9 @@ const Sale = () => {
                     </div>
                   </a>
                 </div>
-                <div className="column_2 flex">
+                <div className=" flex gap-3">
                   <a href="/product/Powerology-SM011">
-                    <div className="shadow  h-full rounded-xl flex flex-col bg-white border-l border-b border-gray-200 p-4 ml-6 hover:shadow-lg hover:z-50">
+                    <div className="shadow  rounded-xl flex h-full flex-col bg-white border-l border-b border-gray-200 p-4 ml-6 hover:shadow-lg hover:z-50 ">
                       <div className="relative">
                         <img
                           className="w-48 md:w-auto mx-auto"

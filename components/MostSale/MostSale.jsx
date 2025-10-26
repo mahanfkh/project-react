@@ -5,7 +5,6 @@ const MostSale = () => {
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(0);
 
-
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -18,7 +17,6 @@ const MostSale = () => {
             image: "/images/battrey-xiaomi-NIM-1161.jpg",
             colors: ["#000000"],
             inStock: true,
-
           },
           {
             id: 2,
@@ -28,7 +26,6 @@ const MostSale = () => {
             image: "/images/blu keyboard.jpg",
             colors: ["#000000"],
             inStock: true,
-
           },
           {
             id: 3,
@@ -75,7 +72,6 @@ const MostSale = () => {
             image: "/images/POMP-GREEN-11.jpg",
             colors: ["#000000"],
             inStock: true,
-
           },
           {
             id: 8,
@@ -85,7 +81,7 @@ const MostSale = () => {
             image: "/images/MCDODO-4100-11.jpg",
             colors: ["#000000"],
             inStock: true,
-          }
+          },
         ];
 
         setProducts(mockData);
@@ -117,7 +113,7 @@ const MostSale = () => {
 
   useEffect(() => {
     if (totalPages <= 1) return;
-    
+
     const interval = setInterval(() => {
       nextPage();
     }, 3000);
@@ -134,12 +130,14 @@ const MostSale = () => {
               <div className="col-span-6">
                 <div className="flex flex-row items-center relative py-0 md:py-2">
                   <div className="flex w-full justify-between py-6">
-                    <a 
-                      href="https://www.dastresi.com/products?sort=0&avaliable_products=1" 
-                      style={{color: '#4e5e60'}} 
+                    <a
+                      href="https://www.dastresi.com/products?sort=0&avaliable_products=1"
+                      style={{ color: "#4e5e60" }}
                       className="flex text-base font-normal items-center gap-2"
                     >
-                      <span className="text-sm hidden md:block text-black">مشاهده همه محصولات</span>
+                      <span className="text-sm hidden md:block text-black">
+                        مشاهده همه محصولات
+                      </span>
                     </a>
                     <span className="text-2xl text-center font-bold text-black">
                       پرفروش ترین محصولات
@@ -151,14 +149,14 @@ const MostSale = () => {
                   <div className="relative">
                     <div className="grid grid-cols-4 gap-5">
                       {getCurrentProducts().map((product) => (
-                        <a 
+                        <a
                           key={product.id}
                           className=" item flex flex-col justify-between rounded-xl shadow-md bg-white mb-2 hover:shadow-lg transition-shadow duration-300"
                         >
                           <div className="flex gap-2 flex-col">
-                            <img 
-                              alt={product.name} 
-                              className="mx-auto rounded-t-xl h-40 object-cover text-black text-lg" 
+                            <img
+                              alt={product.name}
+                              className="mx-auto rounded-t-xl h-40 object-cover text-black text-lg"
                               src={product.image}
                             />
                             <div className="flex flex-col justify-around flex-1 p-2 text-center  text-black text-lg bg-danger">
@@ -181,7 +179,9 @@ const MostSale = () => {
                                 <span className="text-blue-600 font-bold text-xl">
                                   {product.price}
                                 </span>
-                                <span className="text-gray-600 text-xs mr-1">تومان</span>
+                                <span className="text-gray-600 text-xs mr-1">
+                                  تومان
+                                </span>
                               </div>
                             </>
                           ) : (
@@ -213,22 +213,21 @@ const MostSale = () => {
                         </button>
                       </>
                     )}
-
                   </div>
-                  <br/>
-                  <br/>
+                  <br />
+                  <br />
                 </div>
 
                 <div className="grid grid-cols-2 gap-4 md:hidden">
                   {products.slice(0, 4).map((product) => (
-                    <a 
+                    <a
                       key={product.id}
                       className="item flex flex-col justify-between rounded-xl shadow-md bg-white mb-2"
                     >
                       <div className="flex gap-2 flex-col  text-black text-lg">
-                        <img 
-                          alt={product.name} 
-                          className="mx-auto rounded-t-xl h-32 object-cover  text-black text-lg" 
+                        <img
+                          alt={product.name}
+                          className="mx-auto rounded-t-xl h-32 object-cover  text-black text-lg"
                           src={product.image}
                         />
                         <div className="flex flex-col justify-around flex-1 p-2 text-center">
@@ -251,7 +250,9 @@ const MostSale = () => {
                             <span className="text-blue-600 font-bold text-lg">
                               {product.price}
                             </span>
-                            <span className="text-gray-600 text-xs mr-1">تومان</span>
+                            <span className="text-gray-600 text-xs mr-1">
+                              تومان
+                            </span>
                           </div>
                         </>
                       ) : (
@@ -261,7 +262,7 @@ const MostSale = () => {
                       )}
                     </a>
                   ))}
-                  <br/>
+                  <br />
                 </div>
               </div>
             </div>

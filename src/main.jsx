@@ -20,7 +20,7 @@ createRoot(document.getElementById("root")).render(
     <Category />
     <New />
     <Info />
-    <MostSale/>
+    <MostSale />
     <BestBrands />
     <Article />
     <Footer />

@@ -11,26 +11,32 @@ const Article = () => {
           {
             id: 1,
             title: "چرا آیفون من شارژ نمی‌شود؟ راهنمای رفع مشکل",
-            image: "/images/Why-iPhone-is-not-charging- dastresiArtboard 1 copy.jpg",
+            image:
+              "/images/Why-iPhone-is-not-charging- dastresiArtboard 1 copy.jpg",
           },
           {
             id: 2,
-            title: "کابل MFi چیست؟ : ناجی باتری آیفون شما یا یک حقه تبلیغاتی...",
+            title:
+              "کابل MFi چیست؟ : ناجی باتری آیفون شما یا یک حقه تبلیغاتی...",
             image: "/images/what-is-mfi-apple-dastresi-Artboard 1 copy 3.jpg",
           },
           {
             id: 3,
-            title: "شارژ بی‌سیم در برابر شارژ با کابل: کدام یک برای آیفون شما بهتر است؟",
-            image: "/images/wireless-charging-vs-charger-dastresiArtboard 1.jpg",
+            title:
+              "شارژ بی‌سیم در برابر شارژ با کابل: کدام یک برای آیفون شما بهتر است؟",
+            image:
+              "/images/wireless-charging-vs-charger-dastresiArtboard 1.jpg",
           },
           {
             id: 4,
             title: "مشکلات رایج کابل شارژ آیفون و راه‌حل‌های آن",
-            image: "/images/Maintenance-of-iPhone-cable-dastresiArtboard 1 copy.jpg",
+            image:
+              "/images/Maintenance-of-iPhone-cable-dastresiArtboard 1 copy.jpg",
           },
           {
             id: 5,
-            title: "بهترین کابل شارژ برای آیفون: راهنمای کامل انتخاب در ۵ دقیقه!",
+            title:
+              "بهترین کابل شارژ برای آیفون: راهنمای کامل انتخاب در ۵ دقیقه!",
             image: "/images/iphone-cable-charger-dastresiArtboard 1.jpg",
           },
           {
@@ -41,13 +47,14 @@ const Article = () => {
           {
             id: 7,
             title: "معرفی ۵ مدل از بهترین میکروفون بویا",
-            image: "/images/best-smelling-microphone-dastresi-Artboard 1 copy 2 (1).jpg",
+            image:
+              "/images/best-smelling-microphone-dastresi-Artboard 1 copy 2 (1).jpg",
           },
           {
             id: 8,
             title: "راهنمای خرید بهترین میکروفون زیر ۱ میلیون تومان",
             image: "/images/Microphone-under-1-millionArtboard 1 (1).jpg",
-          }
+          },
         ];
 
         setArticles(mockData);
@@ -60,19 +67,19 @@ const Article = () => {
   }, []);
 
   const itemsPerPage = 4;
-  
+
   // ایجاد آرایه دورانی از مقالات
   const getCircularArticles = () => {
     if (articles.length === 0) return [];
-    
+
     const result = [];
     const totalItems = articles.length;
-    
+
     for (let i = 0; i < itemsPerPage; i++) {
       const index = (currentPage + i) % totalItems;
       result.push(articles[index]);
     }
-    
+
     return result;
   };
 
@@ -86,7 +93,7 @@ const Article = () => {
 
   useEffect(() => {
     if (articles.length <= itemsPerPage) return;
-    
+
     const interval = setInterval(() => {
       nextPage();
     }, 5000);
@@ -102,32 +109,35 @@ const Article = () => {
         <div className="portlet-content">
           <div className="md:grid grid-cols-6 grid-rows-1">
             <div className="col-span-6 px-4">
-              <div className="flex w-full justify-between pt-6 pb-2">                
+              <div className="flex w-full justify-between pt-6 pb-2">
                 <div className="flex flex-1 flex-col">
                   <div className="flex w-full justify-between py-6">
-                    <a href="/blog" className="flex text-base font-normal items-center text-gray">
-                      <span className="hidden md:block text-black">ورود به بلاگ</span>
+                    <a
+                      href="/blog"
+                      className="flex text-base font-normal items-center text-gray"
+                    >
+                      <span className="hidden md:block text-black">
+                        ورود به بلاگ
+                      </span>
                     </a>
                     <span className="text-2xl text-center font-bold text-black">
                       آخرین مقالات
                     </span>
-
                   </div>
                 </div>
               </div>
 
-              {/* Desktop: 4 articles per row with circular carousel */}
               <div className="hidden md:block">
                 <div className="relative">
                   <div className="grid grid-cols-4 gap-5">
                     {currentArticles.map((article, index) => (
-                      <a 
+                      <a
                         key={`${article.id}-${currentPage}-${index}`}
                         className="item flex flex-col justify-between rounded-xl shadow-md bg-white mb-2 hover:shadow-lg transition-shadow duration-300 hover-title"
                       >
                         <div className="flex flex-col">
-                          <img 
-                            className="mx-auto w-full h-48 object-cover rounded-t-xl" 
+                          <img
+                            className="mx-auto w-full h-48 object-cover rounded-t-xl"
                             alt={article.title}
                             src={article.image}
                           />
@@ -142,7 +152,6 @@ const Article = () => {
                     ))}
                   </div>
 
-                  {/* Navigation Buttons */}
                   {articles.length > itemsPerPage && (
                     <>
                       <button
@@ -166,16 +175,15 @@ const Article = () => {
                 </div>
               </div>
 
-              {/* Tablet: 3 articles per row */}
               <div className="hidden md:grid lg:hidden grid-cols-3 gap-4">
                 {articles.slice(0, 3).map((article) => (
-                  <a 
+                  <a
                     key={article.id}
                     className="item flex flex-col justify-between rounded-xl shadow-md bg-white mb-2 hover-title"
                   >
                     <div className="flex flex-col">
-                      <img 
-                        className="mx-auto w-full h-40 object-cover rounded-t-xl" 
+                      <img
+                        className="mx-auto w-full h-40 object-cover rounded-t-xl"
                         alt={article.title}
                         src={article.image}
                       />
@@ -190,16 +198,15 @@ const Article = () => {
                 ))}
               </div>
 
-              {/* Mobile: 1 article per row */}
               <div className="grid grid-cols-1 gap-4 md:hidden">
                 {articles.slice(0, 3).map((article) => (
-                  <a 
+                  <a
                     key={article.id}
                     className="item flex flex-row justify-between rounded-xl shadow-md bg-white mb-2 hover-title"
                   >
                     <div className="flex flex-row w-full">
-                      <img 
-                        className="w-32 h-32 object-cover rounded-r-xl" 
+                      <img
+                        className="w-32 h-32 object-cover rounded-r-xl"
                         alt={article.title}
                         src={article.image}
                       />
