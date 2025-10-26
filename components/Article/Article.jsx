@@ -11,42 +11,42 @@ const Article = () => {
           {
             id: 1,
             title: "چرا آیفون من شارژ نمی‌شود؟ راهنمای رفع مشکل",
-            image: "../../images/Why-iPhone-is-not-charging- dastresiArtboard 1 copy.jpg",
+            image: "/images/Why-iPhone-is-not-charging- dastresiArtboard 1 copy.jpg",
           },
           {
             id: 2,
             title: "کابل MFi چیست؟ : ناجی باتری آیفون شما یا یک حقه تبلیغاتی...",
-            image: "../../images/what-is-mfi-apple-dastresi-Artboard 1 copy 3.jpg",
+            image: "/images/what-is-mfi-apple-dastresi-Artboard 1 copy 3.jpg",
           },
           {
             id: 3,
             title: "شارژ بی‌سیم در برابر شارژ با کابل: کدام یک برای آیفون شما بهتر است؟",
-            image: "../../images/wireless-charging-vs-charger-dastresiArtboard 1.jpg",
+            image: "/images/wireless-charging-vs-charger-dastresiArtboard 1.jpg",
           },
           {
             id: 4,
             title: "مشکلات رایج کابل شارژ آیفون و راه‌حل‌های آن",
-            image: "../../images/Maintenance-of-iPhone-cable-dastresiArtboard 1 copy.jpg",
+            image: "/images/Maintenance-of-iPhone-cable-dastresiArtboard 1 copy.jpg",
           },
           {
             id: 5,
             title: "بهترین کابل شارژ برای آیفون: راهنمای کامل انتخاب در ۵ دقیقه!",
-            image: "../../images/iphone-cable-charger-dastresiArtboard 1.jpg",
+            image: "/images/iphone-cable-charger-dastresiArtboard 1.jpg",
           },
           {
             id: 6,
             title: "خرید بهترین هندزفری سیمی تا ۵۰۰ تومان",
-            image: "../../images/wired-handsfree-phone-dastresi-.jpg",
+            image: "/images/wired-handsfree-phone-dastresi-.jpg",
           },
           {
             id: 7,
             title: "معرفی ۵ مدل از بهترین میکروفون بویا",
-            image: "../../images/best-smelling-microphone-dastresi-Artboard 1 copy 2 (1).jpg",
+            image: "/images/best-smelling-microphone-dastresi-Artboard 1 copy 2 (1).jpg",
           },
           {
             id: 8,
             title: "راهنمای خرید بهترین میکروفون زیر ۱ میلیون تومان",
-            image: "../../images/Microphone-under-1-millionArtboard 1 (1).jpg",
+            image: "/images/Microphone-under-1-millionArtboard 1 (1).jpg",
           }
         ];
 

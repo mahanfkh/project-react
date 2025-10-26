@@ -1,8 +1,8 @@
-import massageImg from "../../images/massage.jpg";
-import handsfreeImg from "../../images/handsfree.jpg";
-import chargerWallImg from "../../images/charger wall.jpg";
-import powerbankImg from "../../images/powerbank.jpg";
-import powerbankNImg from "../../images/powerbank n.jpg";
+import massageImg from "/images/massage.jpg";
+import handsfreeImg from "/images/handsfree.jpg";
+import chargerWallImg from "/images/charger wall.jpg";
+import powerbankImg from "/images/powerbank.jpg";
+import powerbankNImg from "/images/powerbank n.jpg";
 
 const Sale = () => {
   return (

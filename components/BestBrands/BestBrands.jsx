@@ -11,37 +11,37 @@ const BestBrands = () => {
           {
             id: 1,
             name: "انکر",
-            image: "../../images/logo-1.jpg",
+            image: "/images/logo-1.jpg",
           },
           {
             id: 2,
             name: "آینوبن",
-            image: "../../images/inoben.jpg",
+            image: "/images/inoben.jpg",
           },
           {
             id: 3,
             name: "راوپاور",
-            image: "../../images/logo-2.jpg",
+            image: "/images/logo-2.jpg",
           },
           {
             id: 4,
             name: "مک دودو",
-            image: "../../images/mcdodo.jpg",
+            image: "/images/mcdodo.jpg",
           },
           {
             id: 5,
             name: "کملیون",
-            image: "../../images/cameilon.jpg",
+            image: "/images/cameilon.jpg",
           },
           {
             id: 6,
             name: "پاورولوژی",
-            image: "../../images/powerlogy.jpg",
+            image: "/images/powerlogy.jpg",
           },
           {
             id: 7,
             name: "ایس فست",
-            image: "../../images/acefast.jpg",
+            image: "/images/acefast.jpg",
           }
         ];
 

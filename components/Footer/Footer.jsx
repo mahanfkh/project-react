@@ -79,7 +79,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img 
-                  src="../../images/instagram.jpeg" 
+                  src="/images/instagram.jpeg" 
                   alt="اینستاگرام دسترسی"
                   className="w-6 h-6"
                 />
@@ -136,7 +136,7 @@ const Footer = () => {
             >
               <img 
                 referrerPolicy="origin" 
-                src="../../images/enamad.JPG" 
+                src="/images/enamad.JPG" 
                 alt="نماد اعتماد الکترونیکی" 
                 style={{ cursor: 'pointer' }} 
                 className="max-w-[100px]"

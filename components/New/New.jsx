@@ -21,7 +21,7 @@ const New = () => {
             category: "شارژر رومیزی",
             price: "2,295,000",
             originalPrice: null,
-            image: "../../images/table charger.jpg",
+            image: "/images/table charger.jpg",
             colors: ["#000000"],
             inStock: true,
             href: "#"
@@ -32,7 +32,7 @@ const New = () => {
             category: "انواع گجت های جذاب",
             price: "580,000",
             originalPrice: "600,000",
-            image: "../../images/JETFAN.jpg",
+            image: "/images/JETFAN.jpg",
             colors: ["#000000"],
             inStock: true,
             href: "#"
@@ -43,7 +43,7 @@ const New = () => {
             category: "پاوربانک و جامپ استارتر",
             price: "5,980,000",
             originalPrice: "6,120,000",
-            image: "../../images/power 27600.jpg",
+            image: "/images/power 27600.jpg",
             colors: ["#000000"],
             inStock: true,
             href: "#"
@@ -54,7 +54,7 @@ const New = () => {
             category: "شارژر دیواری",
             price: "950,000",
             originalPrice: null,
-            image: "../../images/charger 20w.jpg",
+            image: "/images/charger 20w.jpg",
             colors: ["#FFFFFF"],
             inStock: true,
             href: "#"
@@ -65,7 +65,7 @@ const New = () => {
             category: "پاوربانک و جامپ استارتر",
             price: "3,200,000",
             originalPrice: null,
-            image: "../../images/power 50000.jpg",
+            image: "/images/power 50000.jpg",
             colors: ["#000000"],
             inStock: true,
             href: "#"
@@ -76,7 +76,7 @@ const New = () => {
             category: "کابل شارژ تایپ سی به لایتنینگ",
             price: "550,000",
             originalPrice: "580,000",
-            image: "../../images/cable type c.jpg",
+            image: "/images/cable type c.jpg",
             colors: ["#000000"],
             inStock: true,
             href: "#"
@@ -87,7 +87,7 @@ const New = () => {
             category: "هدفون و هندزفری",
             price: "1,500,000",
             originalPrice: null,
-            image: "../../images/handsfree.jpg",
+            image: "/images/handsfree.jpg",
             colors: ["#000000"],
             inStock: true,
             href: "#"
@@ -98,7 +98,7 @@ const New = () => {
             category: "جامپ استارت",
             price: "800,000",
             originalPrice: "950,000",
-            image: "../../images/janebi.jpg",
+            image: "/images/janebi.jpg",
             colors: ["#000000"],
             inStock: true,
             href: "#"

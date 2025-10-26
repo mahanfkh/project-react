@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
-import imgCable from "../../images/cable.png";
-import imgAdaptor from "../../images/adaptor.png";
-import imgPowerbank from "../../images/powerbank.png";
-import imgHandsfree from "../../images/handsfree head.png";
-import imgHolder from "../../images/Holder Negahdarande.png";
-import imgMobadel from "../../images/mobadel o rabet.png";
-import imgBattery from "../../images/battery.png";
-import imgGaming from "../../images/gaming.png";
+import imgCable from "/images/cable.png";
+import imgAdaptor from "/images/adaptor.png";
+import imgPowerbank from "/images/powerbank.png";
+import imgHandsfree from "/images/handsfree head.png";
+import imgHolder from "/images/Holder Negahdarande.png";
+import imgMobadel from "/images/mobadel o rabet.png";
+import imgBattery from "/images/battery.png";
+import imgGaming from "/images/gaming.png";
 
 const Category = () => {
   const items = useMemo(
@@ -100,22 +100,22 @@ const Category = () => {
             {/* Mobile */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 flex-row md:hidden items-center text-center">
               <a href="/products/Charging-Cable" className="flex flex-col justify-center items-center w-full">
-                <img className="" src="../../images/cable.png" alt="کابل شارژ" />
+                <img className="" src={imgCable} alt="کابل شارژ" />
               </a>
               <a href="/products/Charger" className="flex flex-col justify-center items-center w-full">
-                <img className="" src="../../images/adaptor.png" alt="آداپتور و شارژر" />
+                <img className="" src={imgAdaptor} alt="آداپتور و شارژر" />
               </a>
               <a href="/products/PowerBank" className="flex flex-col justify-center items-center w-full">
-                <img className="" src="../../images/powerbank.png" alt="پاوربانک و جامپ استارتر" />
+                <img className="" src={imgPowerbank} alt="پاوربانک و جامپ استارتر" />
               </a>
               <a href="/products/headset" className="flex flex-col justify-center items-center w-full">
-                <img className="" src="../../images/handsfree head.png" alt="هندزفری و هدست، میکروفون" />
+                <img className="" src={imgHandsfree} alt="هندزفری و هدست، میکروفون" />
               </a>
               <a href="/products/holders" className="flex flex-col justify-center items-center w-full">
-                <img className="" src="../../images/Holder Negahdarande.png" alt="هولدر و نگهدارنده" />
+                <img className="" src={imgHolder} alt="هولدر و نگهدارنده" />
               </a>
               <a href="/products/132" className="flex flex-col justify-center items-center w-full">
-                <img className="" src="../../images/mobadel o rabet.png" alt="کابل - مبدل - رابط " />
+                <img className="" src={imgMobadel} alt="کابل - مبدل - رابط " />
               </a>
             </div>
           </div>
