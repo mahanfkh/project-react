@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Global app background */
+html, body, #root {
+  @apply bg-white/55;
+}
